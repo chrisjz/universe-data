@@ -3,7 +3,7 @@
 Star catalog tiles for **[Universe Atlas](https://universeatlas.org/)**
 ([chrisjz/universe](https://github.com/chrisjz/universe)) — served straight
 from this repo via GitHub Pages at
-`https://chrisjz.github.io/universe-data/`.
+`https://data.universeatlas.org/`.
 
 ## Contents
 
