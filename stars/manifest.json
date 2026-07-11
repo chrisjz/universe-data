@@ -1,5 +1,7 @@
 {
-  "source": "ATHYG v3.2 (CC BY-SA 4.0) mag<=11 + Gaia DR3 (ESA/Gaia/DPAC) 11<=G<13 with parallax_over_error>5",
+  "source": "ATHYG v3.2 (CC BY-SA 4.0) mag<=11 + Gaia DR3 (ESA/Gaia/DPAC) 11<=G<13 with parallax_over_error>5; 3D space velocities from proper motions + radial velocities",
+  "format": 2,
+  "stride": 22,
   "total": 6785296,
   "chunks": [
     {
