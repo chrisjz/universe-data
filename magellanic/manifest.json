@@ -1,0 +1,13 @@
+{
+  "source": "Gaia DR3 (ESA/DPAC), proper-motion-selected members; distances: Pietrzyński et al. 2019 (LMC), Graczyk et al. 2020 (SMC)",
+  "clouds": [
+    {
+      "file": "lmc.bin",
+      "count": 1279947
+    },
+    {
+      "file": "smc.bin",
+      "count": 364650
+    }
+  ]
+}
