@@ -1,0 +1,35 @@
+{
+  "source": "SDSS DR18 SpecObj (class=GALAXY, zWarning=0), skyserver.sdss.org",
+  "bands": [
+    {
+      "file": "band-0.bin",
+      "count": 269860,
+      "zMin": 0.01,
+      "zMax": 0.08
+    },
+    {
+      "file": "band-1.bin",
+      "count": 362057,
+      "zMin": 0.08,
+      "zMax": 0.15
+    },
+    {
+      "file": "band-2.bin",
+      "count": 338634,
+      "zMin": 0.15,
+      "zMax": 0.3
+    },
+    {
+      "file": "band-3.bin",
+      "count": 604904,
+      "zMin": 0.3,
+      "zMax": 0.5
+    },
+    {
+      "file": "band-4.bin",
+      "count": 1032012,
+      "zMin": 0.5,
+      "zMax": 1
+    }
+  ]
+}
