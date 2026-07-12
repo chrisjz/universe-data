@@ -13,6 +13,10 @@ stars/
   chunk-*.bin        LOD 0 — ATHYG brights (mag ≤ 11), brightest first
   gaia-b<B>-p<P>.bin LOD 1+ — Gaia DR3 band B (11–11.5, 11.5–12, 12–12.5,
                      12.5–13), HEALPix level-0 sky tile P (0–11)
+magellanic/
+  manifest.json      cloud index (files, star counts, source attribution)
+  lmc.bin, smc.bin   Gaia DR3 Magellanic Cloud members, 12-byte records:
+                     f32 ra°, f32 dec°, u8 G ((G−10)·16), u8 BP−RP ((c+1)·64)
 sdss/
   manifest.json      band index (files, galaxy counts, redshift ranges)
   band-<k>.bin       SDSS DR18 spectroscopic galaxies in redshift bands
