@@ -13,6 +13,11 @@ stars/
   chunk-*.bin        LOD 0 — ATHYG brights (mag ≤ 11), brightest first
   gaia-b<B>-p<P>.bin LOD 1+ — Gaia DR3 band B (11–11.5, 11.5–12, 12–12.5,
                      12.5–13), HEALPix level-0 sky tile P (0–11)
+sdss/
+  manifest.json      band index (files, galaxy counts, redshift ranges)
+  band-<k>.bin       SDSS DR18 spectroscopic galaxies in redshift bands
+                     (0.01–0.08, 0.08–0.15, 0.15–0.3, 0.3–0.5, 0.5–1.0),
+                     12-byte records: f32 ra°, f32 dec°, f32 z
 ```
 
 Each tile is a run of 16-byte little-endian star records:
@@ -28,6 +33,13 @@ scheme is hierarchical LOD (magnitude bands) × spatial (HEALPix level-0),
 so a session only downloads what it renders. Regenerate with
 [`scripts/generate-gaia-tiles.mjs`](https://github.com/chrisjz/universe/blob/main/scripts/generate-gaia-tiles.mjs)
 in the main repo (chunked, resumable download from ESA's TAP archive).
+
+The SDSS tiles come from SkyServer's SpecObj table (class GALAXY,
+zWarning 0, 0.01 ≤ z ≤ 1.0; the app converts redshift to comoving
+distance with its own ΛCDM) — regenerate with
+[`scripts/generate-sdss.mjs`](https://github.com/chrisjz/universe/blob/main/scripts/generate-sdss.mjs).
+Funding for SDSS: the Alfred P. Sloan Foundation and participating
+institutions — [sdss.org](https://www.sdss.org/).
 
 ## Data credits & licenses
 
