@@ -1,9 +1,18 @@
 # universe-data
 
 Star catalog tiles for **[Universe Atlas](https://universeatlas.org/)**
-([chrisjz/universe](https://github.com/chrisjz/universe)) — served straight
-from this repo via GitHub Pages at
-`https://data.universeatlas.org/`.
+([chrisjz/universe](https://github.com/chrisjz/universe)) — published from
+this repo via GitHub Pages and served at `https://data.universeatlas.org/`
+through Cloudflare's CDN (tiles cache at the edge for 30 days; manifests
+follow the origin's 10-minute freshness).
+
+## Deploying data changes
+
+After pushing regenerated tiles, **purge the Cloudflare cache** (dashboard →
+universeatlas.org → Caching → Purge Everything) so the 30-day edge copies
+don't serve stale binaries. Manifests refresh on their own within
+10 minutes, but a manifest can reference re-generated tile bytes, so the
+purge is the safe habit on every data deploy.
 
 ## Contents
 
